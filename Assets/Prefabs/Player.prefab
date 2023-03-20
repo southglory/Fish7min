@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 1027201542939094038}
   - component: {fileID: 7476093211099100802}
   - component: {fileID: 1027201542939094036}
+  - component: {fileID: 517769684338875639}
   - component: {fileID: -4883659181506755589}
   - component: {fileID: 8210071791827551990}
   - component: {fileID: 1027201542939094039}
@@ -179,6 +180,18 @@ MonoBehaviour:
   lookXLimit: 45
   canMove: 1
   cameraYOffset: 0.4
+--- !u!114 &517769684338875639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027201542939094025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cebf2d7b8c84c4da22eb125d62971b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-4883659181506755589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,9 +204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b86db89bdd84db44b5c910a3b86d6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 255
+  _componentIndexCache: 1
   _addedNetworkObject: {fileID: 1027201542939094039}
-  _networkObjectCache: {fileID: 0}
+  _networkObjectCache: {fileID: 1027201542939094039}
   objToSpawn: {fileID: 4339845557676745759, guid: 3b69049fd6e3a8d47b306689241c33e6, type: 3}
   spawnedObject: {fileID: 0}
 --- !u!114 &8210071791827551990
@@ -208,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8660d68f1bda12d499cd9714194aa3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 1027201542939094039}
   _networkObjectCache: {fileID: 1027201542939094039}
   body: {fileID: 1027201542493241014}
@@ -230,6 +243,7 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   _networkBehaviours:
   - {fileID: 1027201542939094036}
+  - {fileID: -4883659181506755589}
   - {fileID: 8210071791827551990}
   - {fileID: 1027201542939094037}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
@@ -258,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 2
+  _componentIndexCache: 3
   _addedNetworkObject: {fileID: 1027201542939094039}
   _networkObjectCache: {fileID: 1027201542939094039}
   _synchronizeParent: 0

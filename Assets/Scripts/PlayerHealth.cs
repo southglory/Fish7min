@@ -8,6 +8,7 @@ using FishNet.Object.Synchronizing;
 public class PlayerHealth : NetworkBehaviour
 {
     [SyncVar] public int health = 10;
+
     public override void OnStartClient()
     {
         base.OnStartClient();

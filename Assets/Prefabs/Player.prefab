@@ -109,8 +109,10 @@ GameObject:
   - component: {fileID: 1027201542939094038}
   - component: {fileID: 7476093211099100802}
   - component: {fileID: 1027201542939094036}
+  - component: {fileID: 8210071791827551990}
   - component: {fileID: 1027201542939094039}
   - component: {fileID: 1027201542939094037}
+  - component: {fileID: 1373877818744249188}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -176,6 +178,23 @@ MonoBehaviour:
   lookXLimit: 45
   canMove: 1
   cameraYOffset: 0.4
+--- !u!114 &8210071791827551990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027201542939094025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8660d68f1bda12d499cd9714194aa3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentIndexCache: 1
+  _addedNetworkObject: {fileID: 1027201542939094039}
+  _networkObjectCache: {fileID: 1027201542939094039}
+  body: {fileID: 1027201542493241014}
+  endColor: {r: 0.25157225, g: 0.6202342, b: 1, a: 0}
 --- !u!114 &1027201542939094039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +212,7 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   _networkBehaviours:
   - {fileID: 1027201542939094036}
+  - {fileID: 8210071791827551990}
   - {fileID: 1027201542939094037}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
@@ -220,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 2
   _addedNetworkObject: {fileID: 1027201542939094039}
   _networkObjectCache: {fileID: 1027201542939094039}
   _synchronizeParent: 0
@@ -249,6 +269,21 @@ MonoBehaviour:
     X: 0
     Y: 0
     Z: 0
+--- !u!114 &1373877818744249188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027201542939094025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c71fd7f855ec523429999fc4e14a1928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _overrideType: 3
+  _updateHostVisibility: 1
+  _observerConditions: []
 --- !u!1 &8599369259522981710
 GameObject:
   m_ObjectHideFlags: 0
